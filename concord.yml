@@ -4,6 +4,6 @@ configuration:
 
 flows:
   default:
-  - form: ${formNameVar}
+  - form: myCustomForm
   - log: "Hello, ${myForm.name}"
   - log: "Hello, ${context.getVariable(formNameVar).name}"
