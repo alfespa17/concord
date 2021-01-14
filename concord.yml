@@ -1,7 +1,3 @@
-configuration:
-  arguments:
-    formNameVar: "myForm"
-
 flows:
   default:
   - form: myCustomForm
