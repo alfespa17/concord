@@ -1,5 +1,5 @@
 flows:
   default:
+  - log: "Hello World!"
   - form: myCustomForm
-  - log: "Hello, ${myForm.name}"
-  - log: "Hello, ${context.getVariable(formNameVar).name}"
+  - log: "Hello, ${myCustomForm.name}"
