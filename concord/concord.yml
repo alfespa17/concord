@@ -6,6 +6,6 @@ flows:
     then:
        - log: "Soy Null"
 
-
+forms:
   myForm:
   - name: { type: "string" }
