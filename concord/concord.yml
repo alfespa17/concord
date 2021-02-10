@@ -6,7 +6,7 @@ flows:
     then:
        - log: "Soy Null"
     else:                           
-        - log: "No soy Null
+        - log: "No soy Null"
 
 forms:
   myForm:
