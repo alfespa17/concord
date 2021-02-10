@@ -1,7 +1,7 @@
 flows:
   default:
   - log: "Hello World!"
-  - if: ${ !empty myCustomForm.name }
+  - if: ${ !empty myForm.name }
     then:
        - log: "Soy Null"
 
