@@ -1,17 +1,10 @@
 flows:
   default:
   - log: "Hello World!"
-  - form: myCustomForm
-  - log: "Hello, ${myCustomForm.name}"
+  - if: ${ !empty myCustomForm.name }
+    then:
+       - log: "Soy Null"
 
-forms:
-  myCustomForm:
-  - fullName: { label: "Name", type: "string", pattern: ".* .*", readonly: true, placeholder: "Place name here" }
-  - age: { label: "Age", type: "int", min: 21, max: 100 }
-  - favouriteColour: { label: "Favourite colour", type: "string", allow: ["gray", "grey"], search: true }
-  - password: { label: "Password", type: "string", inputType: "password" }
-  - rememberMe: { label: "Remember me", type: "boolean" }
-  - photo: { label: "Photo", type: "file" }
-  - email: { label: "Email", type: "string", inputType: "email" }
+
   myForm:
   - name: { type: "string" }
