@@ -5,7 +5,9 @@ flows:
   - if: ${ !empty myForm.name }
     then:
        - log: "Soy Null"
+    else:                           
+        - log: "No soy Null
 
 forms:
   myForm:
-  - name: { type: "string" }
+  - name: { type: "string?" }
