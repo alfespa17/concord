@@ -2,11 +2,11 @@ flows:
   default:
   - log: "Hello World!"
   - form: myForm
-  - if: ${ !empty myForm.name }
+  - if: ${ empty myForm.name }
     then:
        - log: "Soy Null"
     else:                           
-        - log: "No soy Null"
+       - log: "No soy Null"
 
 forms:
   myForm:
